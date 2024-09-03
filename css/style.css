@@ -31,6 +31,22 @@ img {
   vertical-align: middle;
   max-width: 100%;
 }
+
+.btn {
+  display: inline-block;
+  min-width: 174px;
+  padding: 15px 0px;
+  border-radius: 8px;
+  background: var(--orange-lt);
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffff;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
 /* Section Title */
 .section-title {
   margin-bottom: 48px;
@@ -221,6 +237,7 @@ main {
   text-align: center;
   color: #ffff;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 .tour-content a:hover {
   background: #ff5500e3;
@@ -327,9 +344,72 @@ main {
 
 /* Discounts Section Starting */
 .discount {
-  min-height: 100vh;
-  width: 100%;
 }
+
+.deals-item {
+  background: url(../img/deals-discounts.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 56px 56px 56px 0px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+.deals-item:nth-child(2n + 2) {
+  background: url(../img/deals-2.png);
+}
+
+.deals-content {
+  background-color: #ffffffdb;
+  margin-left: auto;
+  padding: 50px 77px 50px 50px;
+  max-width: 579px;
+  border-radius: 16px;
+}
+
+.deals-item:nth-child(2n + 2) .deals-content {
+  margin-right: auto;
+  margin-left: 56px;
+}
+
+.deals-meta {
+}
+.deals-meta ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 24px;
+  font-size: 16px;
+  color: #5a5a5d;
+}
+.deals-meta ul li i {
+  color: var(--orange-lt);
+}
+
+.deals-item h3 {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 24px 0px;
+}
+
+.deals-item p {
+  font-size: 16px;
+  color: var(--gray-text);
+}
+.deals-item a {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--orange-lt);
+  margin: 24px 0;
+  display: block;
+}
+
+.all-deals-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  margin-top: 48px;
+}
+
 /* Discounts Section Ending */
 
 /* Video Section Starting */
@@ -441,6 +521,11 @@ footer .social-links i {
   .container {
     padding: 0 22px;
   }
+
+  .section-padding {
+    padding: 0px 0px;
+  } 
+
   .checkBtn {
     display: block;
     order: 1;
@@ -509,6 +594,19 @@ footer .social-links i {
   .card2 {
     margin-bottom: 30px;
   }
+  .deals-item {
+    padding: 30px;
+  }
+  .deals-content {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 90%;
+}
+
+.deals-item:nth-child(2n + 2) .deals-content {
+  margin-left: auto;
+}
+
   .nl-wrapper {
     flex-direction: column;
   }
